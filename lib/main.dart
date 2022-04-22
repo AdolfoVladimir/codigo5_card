@@ -9,37 +9,39 @@ class MandarinaApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        backgroundColor: Colors.indigo,
+        backgroundColor: Colors.white70,
         body: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            CircleAvatar(
-              radius: 56.0,
+            const CircleAvatar(
+              radius: 60.0,
               backgroundImage: NetworkImage(
-                "https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+                "https://static1.abc.es/media/summum/2021/10/01/maxi_iglesias-kXKH--620x349@abc.jpeg",
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 10.0,
             ),
-            Text(
-              "Fiorlla",
+            const Text(
+              "Fernándo Guillen",
               style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 22.0,
-                  fontFamily: "Regular 400"),
+                color: Colors.white,
+                fontSize: 40.0,
+                fontFamily: "Regular 400",
+              ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 4.0,
             ),
-            Text(
+            const Text(
               "FLUTTER DEVELOPER",
               style: TextStyle(
-                color: Colors.white60,
+                color: Colors.black45,
+                fontWeight: FontWeight.bold,
                 letterSpacing: 1.6,
               ),
             ),
-            SizedBox(
+            const SizedBox(
               width: 120.0,
               child: Divider(
                 thickness: 0.37,
@@ -48,18 +50,18 @@ class MandarinaApp extends StatelessWidget {
                 // endIndent: 100.0,
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 10.0,
             ),
-            Card(
+            const Card(
               color: Colors.white,
               margin: EdgeInsets.symmetric(
-                horizontal: 16.0,
+                horizontal: 20.0,
               ),
-              elevation: 3,
+              elevation: 8,
               child: ListTile(
                 title: Text(
-                  "+51 969461067",
+                  "+51 918273645",
                   style: TextStyle(
                     fontSize: 17.0,
                   ),
@@ -69,44 +71,67 @@ class MandarinaApp extends StatelessWidget {
                 ),
                 leading: Icon(
                   Icons.phone,
-                  color: Colors.indigo,
+                  color: Colors.grey,
                 ),
                 trailing: Icon(
                   Icons.check_circle_outline,
-                  color: Colors.indigo,
+                  color: Colors.grey,
                 ),
               ),
             ),
-            SizedBox(
-              height: 10.0,
+            const SizedBox(
+              height: 16.0,
             ),
-            Card(
+            const Card(
               color: Colors.white,
               margin: EdgeInsets.symmetric(
-                horizontal: 16.0,
+                horizontal: 20.0,
               ),
-              elevation: 3,
+              elevation: 8,
               child: ListTile(
                 title: Text(
-                  "SQsfvsjkf",
+                  "fernandoGillen@gmail.com",
                   style: TextStyle(
                     fontSize: 17.0,
                   ),
                 ),
-
+                subtitle: Text(
+                  "Correo electrónico",
+                ),
                 leading: Icon(
                   Icons.mail_outline,
-                  color: Colors.indigo,
+                  color: Colors.grey,
                 ),
                 trailing: Icon(
-                  Icons.check_circle_outline,
-                  color: Colors.indigo,
+                  Icons.send,
+                  color: Colors.grey,
                 ),
               ),
             ),
+            const SizedBox(
+              height: 20.0,
+            ),
             Row(
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
-
+                Image.asset(
+                  'assets/image/facebook.png',
+                  height: 50.0,
+                ),
+                const SizedBox(
+                  width: 30.0,
+                ),
+                Image.asset(
+                  'assets/image/twitter.png',
+                  height: 50.0,
+                ),
+                const SizedBox(
+                  width: 30.0,
+                ),
+                Image.asset(
+                  'assets/image/instagram.png',
+                  height: 50.0,
+                ),
               ],
             ),
           ],
